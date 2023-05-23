@@ -1,0 +1,100 @@
+HTML:
+<nav role="navigation">
+  <ul>
+    <li><a href="https://www.chauffeurbookingmelbourne.com.au/">Home</a></li>
+    <li><a href="https://www.chauffeurbookingmelbourne.com.au/about-chauffeur-booking-melbourne/">About US</a></li>
+    <li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Services</a>
+      <ul class="dropdown">
+        <li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Mercedes People Mover</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Corporate Chauffeur Service</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">BMW Chauffeur Melbourne</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Audi Chauffeur Melbourne</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Luxury Airport Transfers Melbourne</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Our Feet</a>
+      <ul class="dropdown">
+        <li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Audi</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/"> Bentle</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">BMW Chauffeur Melbourne</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Audi Chauffeur Melbourne</a></li>
+		<li><a href="https://www.chauffeurbookingmelbourne.com.au/chauffeurs-services/">Luxury Airport Transfers Melbourne</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Testimoninal</a></li>
+  
+    <li><a href="#">Contact US</a></li>
+      <li><a class="navbtn" href="tel:1300264169">1300 264 169</a></li>
+  </ul>
+</nav>
+
+CSS:
+a {
+  text-decoration: none;
+}
+
+nav {
+	font-family: monospace;
+}
+
+ul {
+  background: darkorange;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+li {
+	color: #fff;
+  font-family:raileway;
+  font-weight:400;
+  font-size:14px;
+  background: grey;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover {
+	background: inherit;
+	cursor: pointer;
+}
+
+ul li ul {
+	background: transparent;
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+	left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+
+  display: block;
+}
+
+ul li ul li {
+	clear: both;
+  width: 100%;
+}
+.navbtn{
+  background:#E4DDD1;
+  color:#000;
+}
+.dropdown{
+  width:170px;
+}
